@@ -21,7 +21,7 @@ import usePrevious from './hooks/usePrevious'
 import { serializeProject } from '@rawgraphs/rawgraphs-core'
 import useDataLoader from './hooks/useDataLoader'
 import isPlainObject from 'lodash/isPlainObject'
-import CookieConsent from 'react-cookie-consent'
+//import CookieConsent from 'react-cookie-consent'
 
 // #TODO: i18n
 
@@ -209,7 +209,7 @@ function App() {
           </Section>
         )}
         <Footer />
-        <CookieConsent
+          {/*<CookieConsent
           location="bottom"
           buttonText="Got it!"
           style={{ background: '#f5f5f5', color: '#646467' }}
@@ -233,7 +233,7 @@ function App() {
           >
             Learn More
           </a>
-        </CookieConsent>
+        </CookieConsent>*/}
       </div>
       <ScreenSizeAlert />
     </div>
