@@ -50,15 +50,14 @@ h2 {
     color:#999999;
     font-family: "Helvetica Neue, Hevetica, Arial, sans-serif";
     display:inline-flex;
-
   }
 }
 
 .footerCopyright {
-  max-width:75%;
+  max-width:100%;
   border-top: 1px solid #003D7C;
   background-color: #003062;
-  color: #8f7e7e;
+  color: #999999;
   padding: 40px 0;
   text-align: center;
   font-weight: 300;
@@ -66,21 +65,42 @@ h2 {
   font-size:20px;
 
   a{
-    color: #8f7e7e;
+    color: #999999;
 
   }
   a:hover {
     color:#ffffff;
+    text-decoration: none;
   }
   .col {
     background-color: white;
     left:50%;
     right:50%;
   }
+
+  li {
+    color:purple;
+
+    &:not(:last-child) 
+    { 
+      margin-right: 30px;
+      content: '•|';
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.footerBottom {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .icon {
-  color:white;
+  color:#999999;
   margin-left:20px;
   margin-right:20px;
   width:10px;

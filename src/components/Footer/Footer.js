@@ -87,16 +87,16 @@ export default function Footer(props) {
 
 
     <Container className={styles.footerCopyright} style={{display:'flex'}}>
-      <Col xs="12" sm="12" lg="12">
-        <Row xs="12" sm="12" lg="12">
+      <Col>
+        <Row className={styles.footerBottom}>
             <p>©<a href="http://www.nus.edu.sg">National University of Singapore</a>. All Rights Reserved.</p>
         </Row>
-        <Row xs="12" sm="12" lg="12">
+        <Row className={styles.footerBottom}>
           <Nav>
-              <Nav.Link href="http://www.nus.edu.sg/legal-information-notices" target="_blank">Legal</Nav.Link>
-              <Nav.Link href="http://www.nus.edu.sg/identity" target="_blank">Branding guidelines</Nav.Link>
-              <Nav.Link href="http://www.nus.edu.sg/contact" target="_blank">Contact us</Nav.Link>
-              <Nav.Link href="http://cn.nus.edu.sg/" target="_blank">中文</Nav.Link>
+              <li><a href="http://www.nus.edu.sg/legal-information-notices" target="_blank">Legal</a></li>
+              <li><a href="http://www.nus.edu.sg/identity" target="_blank">Branding guidelines</a></li>
+              <li><a href="http://www.nus.edu.sg/contact" target="_blank">Contact us</a></li>
+              <li><a href="http://cn.nus.edu.sg/" target="_blank">中文</a></li>
           </Nav>
         </Row>
       </Col>
