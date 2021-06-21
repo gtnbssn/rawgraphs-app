@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Footer.module.scss'
 import { Nav, Row, Col, Container, ListGroup } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationArrow, faPhoneAlt,faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLocationArrow, faPhoneAlt,faEnvelope, faCircle} from '@fortawesome/free-solid-svg-icons'
 
 // #TODO add commit hash
 // const commitHash = process.env.REACT_APP_VERSION || 'dev'
@@ -12,7 +12,7 @@ export default function Footer(props) {
   <Container className={styles.footer}>
     <Container className={styles.footerTop}>
     <Row>
-      <Col xs="6" sm="5" lg="3" className="col-lg-4 col-md-4 col-sm-4 hidden-sm hidden-xs" >
+      <Col xs={4} sm={4} lg={4} xsHidden smHidden>
         <h2>Resource Librarians</h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="http://libguides.nus.edu.sg/areastudies" target="_blank">Area Studies</a></li>
@@ -35,7 +35,7 @@ export default function Footer(props) {
 
 
 
-      <Col xs="6" sm="5" lg="3" className="col-lg-4 col-md-4 col-sm-4 hidden-sm hidden-xs">
+      <Col xs={4} sm={4} lg={4} xsHidden smHidden>
         <h2><span>Libraries</span></h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="/frontend/ms/central-library/about-central-library" target="_self">Central Library</a></li>
@@ -50,7 +50,7 @@ export default function Footer(props) {
       </Col>
 
 
-      <Col xs="6" sm="5" lg="3" className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <Col xs={12} sm={12} md={4} lg={4} className={styles.footerMin}>
       <h2><span>NUS Libraries</span></h2>
         <Row>
           <ListGroup className={styles.footer_listItem}>
@@ -93,9 +93,9 @@ export default function Footer(props) {
         </Row>
         <Row className={styles.footerBottom}>
           <Nav>
-              <li><a href="http://www.nus.edu.sg/legal-information-notices" target="_blank">Legal</a></li>
-              <li><a href="http://www.nus.edu.sg/identity" target="_blank">Branding guidelines</a></li>
-              <li><a href="http://www.nus.edu.sg/contact" target="_blank">Contact us</a></li>
+              <li><a href="http://www.nus.edu.sg/legal-information-notices" target="_blank">Legal</a></li><FontAwesomeIcon icon={faCircle} className={styles.pseudoIcon}/>
+              <li><a href="http://www.nus.edu.sg/identity" target="_blank">Branding guidelines</a></li><FontAwesomeIcon icon={faCircle} className={styles.pseudoIcon}/>
+              <li><a href="http://www.nus.edu.sg/contact" target="_blank">Contact us</a></li><FontAwesomeIcon icon={faCircle} className={styles.pseudoIcon}/>
               <li><a href="http://cn.nus.edu.sg/" target="_blank">中文</a></li>
           </Nav>
         </Row>
@@ -103,100 +103,5 @@ export default function Footer(props) {
     </Container>
 
 </Container>
-
-    // <Container fluid style={{ backgroundColor: 'var(--dark)' }}>
-    //   <Container className={styles.footer}>
-    //     <Row>
-    //       <Col xs={6} sm={{ span: 5, order: 1 }} lg={{ span: 3, order: 1 }}>
-    //         <p className="Xsmall">
-    //           RAWGraphs is an open source project designed and developed by{' '}
-    //           <a
-    //             href="http://densitydesign.org/"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             DensityDesign
-    //           </a>
-    //           ,{' '}
-    //           <a
-    //             href="https://calib.ro/"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             Calibro
-    //           </a>{' '}
-    //           and{' '}
-    //           <a
-    //             href="https://inmagik.com/"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             Inmagik
-    //           </a>
-    //           .
-    //           <br />© 2013-2021{' '}
-    //           <a href="https://raw.github.com/rawgraphs/rawgraphs-app/master/LICENSE">
-    //             (Apache License 2.0)
-    //           </a>
-    //         </p>
-    //       </Col>
-    //       <Col xs={6} sm={{ span: 5, order: 3 }} lg={{ span: 3, order: 1 }}>
-    //         <p className="Xsmall"></p>
-    //       </Col>
-    //       {/* <Col xs={6} sm={{span:5, order:3}} lg={{span:3,order:1}}><p className="Xsmall">This <span title={commitHash}>version</span> is intended to be available only for the backers of the crowdfunding campaign.</p></Col> */}
-    //       <Col
-    //         xs={6}
-    //         sm={{ span: 6, offset: 1, order: 2 }}
-    //         md={{ span: 3 }}
-    //         lg={{ offset: 0 }}
-    //         xl={{ span: 2, offset: 2 }}
-    //       >
-    //         <p>
-    //           <BsFillEnvelopeFill /> hello at rawgraphs.io
-    //         </p>
-    //         <p>
-    //           <FaTwitter />{' '}
-    //           <a
-    //             href="https://twitter.com/rawgraphs"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             @rawgraphs
-    //           </a>
-    //         </p>
-    //       </Col>
-    //       <Col
-    //         xs={6}
-    //         sm={{ span: 6, offset: 1, order: 4 }}
-    //         md={{ span: 2 }}
-    //         lg={{ offset: 0 }}
-    //         xl={{ span: 2, offset: 0 }}
-    //       >
-    //         <p>
-    //           <FaGithub />{' '}
-    //           <a
-    //             href="https://github.com/rawgraphs"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             Github
-    //           </a>
-    //         </p>
-    //         <p>
-    //           <BsBarChartFill />{' '}
-    //           <a
-    //             href="https://old.rawgraphs.io"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             RAWGraphs v.1
-    //           </a>
-    //         </p>
-    //       </Col>
-    //     </Row>
-    //   </Container>
-    // </Container>
   )
 }
-
-
