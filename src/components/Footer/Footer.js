@@ -12,7 +12,7 @@ export default function Footer(props) {
   <Container className={styles.footer}>
     <Container className={styles.footerTop}>
     <Row>
-      <Col xs={4} sm={4} lg={4} xsHidden smHidden>
+      <Col xs={4} sm={4} lg={4} className="d-xs-none d-sm-none d-lg-block">
         <h2>Resource Librarians</h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="http://libguides.nus.edu.sg/areastudies" target="_blank">Area Studies</a></li>
@@ -35,7 +35,7 @@ export default function Footer(props) {
 
 
 
-      <Col xs={4} sm={4} lg={4} xsHidden smHidden>
+      <Col xs={4} sm={4} lg={4} className="d-xs-none d-sm-none d-lg-block">
         <h2><span>Libraries</span></h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="/frontend/ms/central-library/about-central-library" target="_self">Central Library</a></li>
@@ -52,11 +52,11 @@ export default function Footer(props) {
 
       <Col xs={12} sm={12} md={4} lg={4}>
       <Col className={styles.footerMin}>
-      <h2><span>NUS Libraries</span></h2>
-        <Row>
+      <h2 className={styles.footerMinContentHeader}><span>NUS Libraries</span></h2>
+        <Row className={styles.footerMinContent}>
           <ListGroup className={styles.footer_listItem}>
             <li>  <FontAwesomeIcon icon={faLocationArrow} className={styles.icon}/>
-              <pre>Central Library{'\n'}
+              <pre className={styles.address}>Central Library{'\n'}
               12 Kent Ridge Crescent{'\n'}
               Singapore 119275</pre>
               </li>
@@ -67,7 +67,7 @@ export default function Footer(props) {
           </ListGroup> 
         </Row>
 
-        <Row>
+        <Row className={styles.footerMinContent}>
           <Nav>
             <Nav.Link href="https://www.facebook.com/NUSLibraries" target="_blank" className={styles.img}><img id="j_id510:0:j_id512" src="facebook" style={{height: 32, width: 32}} />
             </Nav.Link>

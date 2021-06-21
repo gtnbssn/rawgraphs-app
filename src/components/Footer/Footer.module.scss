@@ -45,12 +45,10 @@ h2 {
     font-size:13px;
   }
 
-  pre {
-    font-size:13px;
-  }
-  pre {
+  .address {
     color:#999999;
-    font-family: "Helvetica Neue, Hevetica, Arial, sans-serif";
+    font-size:13px;
+    // font-family: "Helvetica Neue, Hevetica, Arial, sans-serif";
     display:inline-flex;
   }
 }
@@ -103,5 +101,13 @@ h2 {
 
 .footerMin {
   border-left: 1px solid #003D7C;
+}
+
+.footerMinContent {
+  justify-content: center;
+}
+
+.footerMinContentHeader {
+  text-align:center;
 }
 
