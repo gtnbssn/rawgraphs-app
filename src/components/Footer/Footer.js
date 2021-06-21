@@ -50,7 +50,7 @@ export default function Footer(props) {
       </Col>
 
 
-      <Col xs={12} sm={12} md={4} lg={4}>
+      <Col xs={12} sm={12} lg={4} classsName={styles.footerMinContainer}>
       <Col className={styles.footerMin}>
         <Row className={styles.footerMinContent}>
           <ListGroup className={styles.footer_listItem}>
