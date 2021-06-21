@@ -36,7 +36,7 @@ export default function Footer(props) {
 
 
       <Col xs={4} sm={4} lg={4} className="d-xs-none d-sm-none d-lg-block">
-        <h2><span>Libraries</span></h2>
+        <h2>Libraries</h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="/frontend/ms/central-library/about-central-library" target="_self">Central Library</a></li>
             <li> <a href="/frontend/ms/chinese-library-ch/about-chinese-library" target="_self">Chinese Library</a></li>
@@ -52,9 +52,9 @@ export default function Footer(props) {
 
       <Col xs={12} sm={12} md={4} lg={4}>
       <Col className={styles.footerMin}>
-      <h2 className={styles.footerMinContentHeader}><span>NUS Libraries</span></h2>
         <Row className={styles.footerMinContent}>
           <ListGroup className={styles.footer_listItem}>
+          <h2 className={styles.footerMinContentHeader}>NUS Libraries</h2>
             <li>  <FontAwesomeIcon icon={faLocationArrow} className={styles.icon}/>
               <pre className={styles.address}>Central Library{'\n'}
               12 Kent Ridge Crescent{'\n'}
