@@ -50,7 +50,8 @@ export default function Footer(props) {
       </Col>
 
 
-      <Col xs={12} sm={12} md={4} lg={4} className={styles.footerMin}>
+      <Col xs={12} sm={12} md={4} lg={4}>
+      <Col className={styles.footerMin}>
       <h2><span>NUS Libraries</span></h2>
         <Row>
           <ListGroup className={styles.footer_listItem}>
@@ -65,6 +66,7 @@ export default function Footer(props) {
             </li>
           </ListGroup> 
         </Row>
+
         <Row>
           <Nav>
             <Nav.Link href="https://www.facebook.com/NUSLibraries" target="_blank" className={styles.img}><img id="j_id510:0:j_id512" src="facebook" style={{height: 32, width: 32}} />
@@ -81,6 +83,7 @@ export default function Footer(props) {
             </Nav.Link>
           </Nav>
         </Row>
+        </Col>
       </Col>
       </Row>
     </Container>
