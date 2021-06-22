@@ -49,6 +49,7 @@ h2 {
     font-size:13px;
     font-family:inherit;
     display:inline-flex;
+    margin:0px;
   }
 }
 
@@ -77,13 +78,14 @@ h2 {
   font-size: 12px;
   display: flex;
   justify-content: center;
-  line-height: 15px;;
+  line-height: 15px;
 }
 
 .icon {
   color:#ffffff;
   margin-right:8px;
-  width:10px;
+  font-size:13px;
+  font-weight:400;
 }
 
 .img {
@@ -106,6 +108,33 @@ h2 {
 }
 
 .footerMinContentHeader {
-  width:195px;
+  text-align:center;
 }
 
+.footer_listItemMin {
+  line-height:24px;
+  font-weight:300;
+  color:#999999;
+  list-style: none;
+
+  a {
+    color:#999999;
+  }
+  a:hover {
+    color:#ffffff;
+    text-decoration: none;
+  }  
+  li {
+    color:#999999;
+    font-size:13px;
+    text-align:center;
+  }
+
+  .address {
+    color:#999999;
+    font-size:13px;
+    font-family:inherit;
+    display:inline;
+    margin-bottom:10px;
+  }
+}

@@ -12,7 +12,7 @@ export default function Footer(props) {
   <Container className={styles.footer}>
     <Container className={styles.footerTop}>
     <Row>
-      <Col xs={4} sm={4} lg={4} className="d-xs-none d-sm-none d-lg-block">
+      <Col xs={4} sm={4} lg={4} className="d-none d-sm-none d-lg-block">
         <h2>Resource Librarians</h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="http://libguides.nus.edu.sg/areastudies" target="_blank">Area Studies</a></li>
@@ -35,7 +35,7 @@ export default function Footer(props) {
 
 
 
-      <Col xs={4} sm={4} lg={4} className="d-xs-none d-sm-none d-lg-block">
+      <Col xs={4} sm={4} lg={4} className="d-none d-sm-none d-lg-block">
         <h2>Libraries</h2>
           <ListGroup className={styles.footer_listItem}>
             <li> <a href="/frontend/ms/central-library/about-central-library" target="_self">Central Library</a></li>
@@ -50,11 +50,11 @@ export default function Footer(props) {
       </Col>
 
 
-      <Col xs={12} sm={12} lg={4} classsName={styles.footerMinContainer}>
+      <Col xs={12} sm={12} lg={4} className="d-none d-sm-none d-lg-block">
       <Col className={styles.footerMin}>
         <Row className={styles.footerMinContent}>
           <ListGroup className={styles.footer_listItem}>
-          <h2 className={styles.footerMinContentHeader}>NUS Libraries</h2>
+          <h2>NUS Libraries</h2>
             <li>  <FontAwesomeIcon icon={faLocationArrow} className={styles.icon}/>
               <pre className={styles.address}>Central Library{'\n'}
               12 Kent Ridge Crescent{'\n'}
@@ -85,6 +85,42 @@ export default function Footer(props) {
         </Row>
         </Col>
       </Col>
+
+      <Col className="d-block d-sm-block= d-lg-none">
+        <Row className={styles.footerMinContent}>
+          <ListGroup className={styles.footer_listItemMin}>
+          <h2 className={styles.footerMinContentHeader}>NUS Libraries</h2>
+            <li>  <FontAwesomeIcon icon={faLocationArrow} className={styles.icon}/>
+              <pre className={styles.address}>Central Library{'\n'}
+              12 Kent Ridge Crescent{'\n'}
+              Singapore 119275</pre>
+              </li>
+            <li><FontAwesomeIcon icon={faPhoneAlt} className={styles.icon}/><span style={{whiteSpace: 'pre-wrap'}}>+65 6516 2028</span></li>
+            <li><FontAwesomeIcon icon={faEnvelope} className={styles.icon}/>
+              <span><a href="mailto:askalib@nus.edu.sg">askalib@nus.edu.sg</a><br /><a href="mailto:" /></span>
+            </li>
+          </ListGroup> 
+        </Row>
+
+        <Row className={styles.footerMinContent}>
+          <Nav>
+            <Nav.Link href="https://www.facebook.com/NUSLibraries" target="_blank" className={styles.img}><img id="j_id510:0:j_id512" src="facebook" style={{height: 32, width: 32}} />
+            </Nav.Link>
+            <Nav.Link href="https://twitter.com/NUSlibraries" target="_blank" className={styles.img}><img id="j_id510:1:j_id512" src="twitter" style={{height: 32, width: 32}} />
+            </Nav.Link>
+            <Nav.Link href="https://instagram.com/nuslibraries" target="_blank" className={styles.img}><img id="j_id510:2:j_id512" src="instagram" style={{height: 32, width: 32}} />
+            </Nav.Link>
+            <Nav.Link href="http://blog.nus.edu.sg/linus/" target="_blank" className={styles.img}><img id="j_id510:3:j_id512" src="word" style={{height: 32, width: 32}} />
+            </Nav.Link>
+            <Nav.Link href="https://www.youtube.com/user/nuslibraries" target="_blank" className={styles.img}><img id="j_id510:4:j_id512" src="youtube" style={{height: 32, width: 32}} />
+            </Nav.Link>
+            <Nav.Link href="https://www.flickr.com/photos/nuslibraries" target="_blank" className={styles.img}><img id="j_id510:5:j_id512" src="flickr" style={{height: 32, width: 32}} />
+            </Nav.Link>
+          </Nav>
+        </Row>
+      </Col>
+      
+
       </Row>
     </Container>
 
